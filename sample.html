@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with text areas and multiple input types</title>
+
+</head>
+<body>
+    <h2>forms example text areas and various input types </h2>
+    <form action ="process_form.php" method="post">
+    <label for="name">name(only letters and spaces):</label>
+    <input type ="text" id = "name" name="name" pattern="[A-Za-z\s]+" required>
+    <br></br>
+    <label for="age">age:(only numbers)</label>
+    <input type ="text" id = "age" name="age" pattern="[6-9]\D{9}" required>
+    <br></br>
+    <label for="phone">phone number:</label>
+    <input type ="tel" id = "phone" name="phone" placeholder="+91 9655213570" pattern="[6-9]\D{9}" required>
+    <br></br>
+    <label for="search">search:</label>
+    <input type ="search" id = "search" name="search_query" placeholder="type your query....">
+    <br></br>
+    <label for="website">website url:</label>
+    <input type ="url" id = "website" name="website"  pattern="https://.+" required>
+    <br></br>
+    
+    
+    <label for="feedback">feedback:</label>
+    <textarea id = "feedback" name="feedback" rows="4" cols="40" placeholder="write your feedback">
+   
+   
+   
+
+    <br></br>
+    <input type="submit"value="submit"></form>
+</body>
+</html>
